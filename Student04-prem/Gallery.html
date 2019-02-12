@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="../Navigation.css"/>
+      <link rel="stylesheet" href="Gallery.css"/>
+      <script src="Gallery.js"></script>
+      <title>GALLERY | HARLEY-DAVIDSON</title>
+   </head>
+   <body>
+      <div class="fullscreen-bg">
+         <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+            <source src="rain17.webm" type="video/webm">
+         </video>
+      </div>
+      <div class="container" id="idNo1">
+         <div id="thelogo">
+            <nav id="navigation">
+               <ul class="c">
+                  <li class="b"><a href="Gallery.html"> Bike Gallery</a></li>
+                  <li class="b"><a href="../Student 01/Store.html">Buy Now</a></li>
+                  <li class="d"><a href="../Student 02/HD_Home.html"><img src="../logo5.png" id="mylogo" alt="Harley Davidson"/></a></li>
+                  <li class="b"><a href="../Student 03/bike.html">Quiz</a></li>
+                  <li class="b"><a href="../Student 03/Main.html">About Us</a></li>
+               </ul>
+            </nav>
+            </ul>
+            </nav>
+         </div>
+         <div class="grid">
+            <div class="mov"> <img alt="Street 750" src="HDSTREET750.jpg"  border="5"class="bikeCache" id="bike1" onMouseOver="details(this.id)"> </div>
+            <div class="mov"> <img alt="Iron 883" src="HDIRON883.jpg"  border="5" class="bikeCache" id="bike2" onMouseOver="details(this.id)"/> </div>
+            <div class="mov"> <img alt="Roadster" src="HDROADSTER.jpg"  border="5" class="bikeCache" id="bike3" onMouseOver="details(this.id)"/> </div>
+            <div class="mov"> <img alt="Fatboy" src="HDFATBOY.jpg" class="bikeCache"  border="5"  id="bike4" onMouseOver="details(this.id)"/> </div>
+            <div class="mov"> <img alt="Fatbob" src="HDFATBOB.jpg" class="bikeCache"  border="5" id="bike5" onMouseOver="details(this.id)"/> </div>
+            <div id="image"> <img alt="Bike" id="bikeImage" width="800px" height="600px" src="HDSTREET750.jpg" border="10"> </div>
+            <div id="details">
+               <div class="description">
+                  <div class="bikeName" >Harley-Davidson:Street 750</div>
+                  The Davidson Street 750 was the star two-wheeler at the 2014 Auto Expo where it was officially launched. It holds the distinction of being the first Davidson motorcycle to be manufactured in India and this was the key in its competitive pricing. The cruiser bike has been priced at Rs 4.91 lakh a(ex-showroom, Delhi) and it was recently updated with ABS as many people had complained the lack of it and new colour options. The Street 750 has a classic cruiser styling but unlike most American cruiser motorcycles that are drenched in chrome, the Street 750 adopts an all-black theme. It is a good looking bike but the compact dimension is something that doesn’t appeal many.Harley-Davidson’s latest entry-level machine, the Street 750, has been available on the other side of the Atlantic for a year but now the iconic American brand has bought it across the pond, given it a few upgrades and launched it in Europe.
+                  Bike Social was in Barcelona to be among the first to ride it.
+                  Priced very accessibly from only £5795 and available in UK dealerships from 18th September, the bike is firmly aimed at a younger audience in a bid to get them engaged with the brand earlier in their motorcycling life. That’s ‘Young and Urban’ in Harley-speak.
+                  The bike slots into the Dark Custom range alongside the also newly revised Iron 883 and Forty Eight (both have new styling, wheels and suspension). At the launch, Harley-Davidson’s European PR Manager, Michael Carney, explained the theory behind Dark Custom, “It’s the underground contemporary face of Harley-Davidson, a movement. Don’t just think black, think blank canvas for customisation.”
+                  A colourful array of vivid paint, brushed metal, plenty of carbon fibre and aftermarket goodies dressed on a dozen customised Street 750’s and Forty-Eight’s were the Dark Custom evidence surrounding us during the launch presentation. The skills on display were fresh from a European wide customising competition for 150 European Harley dealerships called ‘Battle of the Kings’. 
+               </div>
+            </div>
+            <div id="selector1">
+               <label class="btn" >Try another BG Colour</label>
+               <div><input type="color" id="selectColor1" button class="selectColor" value="#ffffff" onChange="colorChanger1()"></div>   <!-- input type color provides the user interface for select color -->
+
+               </button>
+            </div>
+            <div id="selector2" >
+               <label class="btn">Try another font-colour</label>
+               <div><input type="color" id="selectColor2" button class="selectColor" value="#000000" onChange="colorChanger2()"/></div>
+            </div>
+         </div>
+         <div id="topNav"><a href="#top">NAVIGATE TO TOP-</a>
+            <a href="Prem.html" target="_blank">PAGE EDITOR-</a>
+            <a href="PremSiteMap.html" target="_blank">SITEMAP</a>
+         </div>
+      </div>
+   </body>
+</html>

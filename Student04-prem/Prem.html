@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <title>PremCV</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+         body{
+         padding-left:30px;
+         padding-right:30px;
+         }
+         /* Styling the header and footer for the page */
+         header{
+         padding: 10px;
+         color: white;
+         background-color: #E1C4C7;
+         clear: left;
+         text-align: center;
+         }
+         footer{
+         padding: 10px;
+         color: white;
+         background-color: #E1C4C7;
+         clear: left;
+         text-align: center;
+         }
+         #button {
+         display: none; 
+         position: fixed; 
+         bottom: 20px; 
+         right: 30px; 
+         z-index: 99;                  /* To avoid overlaping */
+         border: none; 
+         outline: none;                /* Removing outline */
+         background-color: #7FFF00; 
+         color: white;                 /* Text color */
+         cursor: pointer;              /* It's for hover effect */
+         padding: 5px; 
+         border-radius: 10px;          /* Rounded corners */
+         font-size: 15px; 
+         }
+         #button:hover {
+         background-color: #00FF00; /* Colour changing effect for hover */
+         }
+         body, html {
+         height: 100%;
+         }
+         .bg {
+         /* The image used */
+         background-image: url("1.jpg");
+         /* Full height */
+         height: 100%; 
+         /* Center and scale the image nicely */
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         }
+         p. groove {border-style:  groove;}
+      </style>
+   </head>
+   <body bgcolor="#FFE4C4">
+      <script>
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+         {
+                document.getElementById("button").style.display = "block";
+            } else 
+         {
+                document.getElementById("button").style.display = "none";
+            }
+         }
+         
+         
+         
+         function topFunction() {
+            
+            document.documentElement.scrollTop = 0; 
+         }
+      </script>	
+      <button onclick="topFunction()" id="button" title="Go to top"><strong>GO TO TOP</strong></button>
+      <header>
+         <p class=" groove">
+         <h1 align="center"><font face="verdana"> CURRICULUM VITAE </h1>
+         </p>
+      </header>
+      <div class="bg">
+         <h1>&nbsp;</h1>
+         <h1>&nbsp;</h1>
+         <h1>&nbsp;</h1>
+         <h1>&nbsp;</h1>
+         <h1>&nbsp;</h1>
+         <h1>&nbsp;</h1>
+         <h1>&nbsp;</h1>
+         <h1>&nbsp;</h1>
+         <h1>&nbsp;</h1>
+         <h1>&nbsp;</h1>
+         <h1><img src="PicsArt_05-02-08.47.05.jpg" alt="dp" align="right" width="300" height="300" /></h1>
+         <h1></h1>
+         <h1>&nbsp;</h1>
+         <h1>&nbsp;</h1>
+         <h1>&nbsp;</h1>
+         <div id="zoom">
+            <h1><strong> [Personal Information]</strong></h1>
+            <p> [Name - *********]</p>
+            <p> [Address - *********]</p>
+            <p>[DOB &ndash; *********]</p>
+            <p>[Gender &ndash; *********]</p>
+            <p>[Nationality &ndash; *********]</p>
+            <p>[Telephone number - *********]&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>[E-mail address - <a href="mailto:*********@gmail.com">*********</a>]</p>
+            <h1>[Skills &amp; Abilities]</h1>
+            <p>[Known languages- *********]</p>
+            <p>[*********]</p>
+            <p>[*********]</p>
+            <p>[*********]</p>
+            <hr>
+            <h1>[Education]</h1>
+            <h2><strong>[*********] </strong></h2>
+            <p>&nbsp;[*********]</p>
+            <p>[*********]&nbsp; [2003-2016]</p>
+            <h2><strong>[*********] </strong></h2>
+            <p>[ *********]&nbsp; [2017-Present]
+            <p>
+            <hr>
+            <h1>[Leadership]</h1>
+            <p>[*********]</p>
+            <p>[*********]</p>
+         </div>
+         <hr>
+         <footer><a href="PremSiteMap.html" target="_blank">&nbsp;SITE MAP</a> </footer>
+      </div>
+      </p>
+   </body>
+</html>

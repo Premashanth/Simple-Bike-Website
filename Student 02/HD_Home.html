@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>Home | Harley Davidson</title>
+
+                <link rel="stylesheet" href="GaNavi.css"/>
+                <link rel="stylesheet" href="GaHome.css"/>
+                <script src="../Navigation.js"></script>
+                <script type="text/javascript">
+
+                    
+                    
+                    //function for changing given image at constont time
+                    var a=0;
+                    function changeNow(){
+                    var image=document.getElementById('changeimg2');
+                    if(a==0){
+                        image.src='Homeimg1.jpg';
+                        image.style.height="500px";
+                        a++;
+                    }
+                    else if(a==1){
+                        image.src='Homeimg2.jpg';
+                        image.style.height="500px";
+                        a++;
+                    }
+                    else if(a==2){
+                        image.src='Homeimg3.jpg';
+                        image.style.height="500px";
+                        a=0;
+
+                    }
+                }
+
+
+
+                    //time setter for changing image 
+                    function change(){
+                    setInterval('changeNow()',3000);
+                    }
+
+
+
+                    //validation for form
+                    var rating=0;
+                    var access=true;
+                    function validate(){
+                    var name=document.getElementById('name').value;  
+                    var comment=document.getElementById('textarea').value;
+
+
+
+                    //validation for name
+                    var mail=document.getElementById('email').value;
+                    if(name.length==0){
+                        alert("Please...fill in the name");
+                        access=false;
+                    }
+
+
+                    //mail validation
+                    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value))) {
+                        alert("Please...fill in the email");
+                        access=false;
+                    }	
+
+
+
+                    //validation for comment
+                    if(comment.length==0){
+                        alert("Please...Write a Comment");
+                        access=false;
+                    }
+
+
+                    //rating validation
+                    if(rating==0){
+                        alert("Not rated");
+                    }  
+
+
+                    //display after completing rate part
+                    if(rating==1 && access==true){
+                        alert("Name :"+name+"\n"+"Rating :Very Bad(1)"+"\n"+"Comment  :"+comment+"\n"+"E-mail"+mail);
+
+                    }
+
+                    if(rating==2 && access==true){
+                        alert("Name :"+name+"\n"+"Rating : Bad(2)"+"\n"+"Comment :"+comment+"\n"+"E-mail"+mail);
+
+                    }
+                    if(rating==3 && access==true){
+                        alert("Name :"+name+"\n"+"Rating :Ok(3)"+"\n"+"Comment :"+comment+"\n"+"E-mail"+mail);
+
+                    }
+                    if(rating==4 && access==true){
+                        alert("Name :"+name+"\n"+"Rating :good(4)"+"\n"+"Comment :"+comment+"\n"+"E-mail :"+mail);
+
+                    }
+                    if(rating==5 && access==true){
+                        alert("Name :"+name+"\n"+"rating :Very good(5)"+"\n"+"comment :"+comment+"\n"+mail);
+
+                    }
+
+                }
+
+
+
+                    //rating circle display
+                    function f(num){
+                        var x=0; 
+
+                    if(num==5){
+                        document.getElementById("rate_1").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_2").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_3").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_4").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_5").style.backgroundColor="white";
+                        x++;
+                    }
+
+                    if(num==4){
+                        document.getElementById("rate_1").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_2").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_3").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_4").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_5").style.backgroundColor="transparent";    
+
+                    }
+
+                    if(num==3){
+                        document.getElementById("rate_1").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_2").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_3").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_4").style.backgroundColor="transparent";
+                        document.getElementById("rate_5").style.backgroundColor="transparent";            
+
+                    }
+
+                    if(num==2){
+                        document.getElementById("rate_1").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_2").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_3").style.backgroundColor="transparent";
+                        document.getElementById("rate_4").style.backgroundColor="transparent";
+                        document.getElementById("rate_5").style.backgroundColor="transparent";   
+
+                    }
+
+                    if(num==1){
+                        document.getElementById("rate_1").style.backgroundColor="white";
+                        x++;
+                        document.getElementById("rate_2").style.backgroundColor="transparent";
+                        document.getElementById("rate_3").style.backgroundColor="transparent";
+                        document.getElementById("rate_4").style.backgroundColor="transparent";
+                        document.getElementById("rate_5").style.backgroundColor="transparent";   
+
+                    }
+
+                    rating=x;
+                }
+
+
+            </script>
+    </head>
+
+    <body>
+
+
+        <div class="container" id="sss">
+
+
+        <div id="thelogo">
+
+
+
+            <nav id="navigation">
+            <ul class="c">
+
+
+
+            <!-- Navigation bar-->
+            <li class="b"><a href="../Student04-prem/Gallery.html"> BIKE GALLERY </a></li>
+            <li class="b"><a href="../Student 01/Store.html"> BUY NOW </a></li>
+            <li class="d"><a href="../Student 02/HD_Home.html"><img src="logo5.png" id="mylogo" alt="Harley Davidson"/></a></li>
+            <li class="b"><a href="../Student 03/bike.html"> QUIZ </a></li>
+            <li class="b"><a href="../Student 03/MAIN.html"> ABOUT US </a></li>
+
+            </ul>
+
+
+            </div>
+
+
+
+            <!-- Image slide show -->
+            <div id="trygrid">
+            <section class="sect">
+
+                <!-- Video part -->
+
+                <img src="bg3.jpg" id="changeimg"   height="1600px" "> 
+
+                <video style="border:1px solid white; width="1800" height="400"  autoplay controls loop  id="video">
+                <source src="HarleyDavidsonOfficial.mp4" type="video/mp4">
+                <source src="HarleyDavidsonOfficial.ogg" type="video/ogg">
+                </video>
+
+            </section> 
+
+
+            <!-- Description near video --> 
+            <div id="text">
+                <h1> HARLEY DAVIDSON MOTORCYCLES </h1>
+                </br>
+            </div>
+            <div id="text2">
+                <h3> ALL FOR FREEDOM. </h3>
+                <h3> FREEDOM FOR ALL.  </h3>
+                </br>
+            </div>
+            <div id="aboutpara">
+                <p> Throughout the world, Harley-Davidson unites people deeply,
+                passionately and authentically. From town to town and country to country,
+                H-D’s ideals of freedom and self-expression transcend cultures, 
+                gender and age. Being recognized as an iconic brand is gratifying,
+                but igniting the fire within people on the many 
+                roads of the world is what we are all about.
+                </p>
+                <p> Harley-Davidson manufactures and sells custom, 
+                cruiser and touring motorcycles that feature leading-edge styling,
+                innovative design, distinctive sound, and superior quality with
+                the ability to personalize. </p>
+
+            </div>
+            <!-- Image slideshow part -->	
+            <div  id="trygrid">
+                <section class="sect">
+                <img src="first12.jpg" id="changeimg2" onLoad="change()"  height="500px" width="800"> 
+                </section>
+
+            </div>
+            <!-- Description near image slideshow -->
+            <div id="para2">
+                <p> This is where authentic heritage and custom soul 
+                    meet modern edge and technology for a ride you have to feel to believe!
+                </p>
+            </div>
+
+            <div id="text3">
+                <h3> THROW A LEG OVER ANY ONE OF THEM. <h3>
+                <h3> THE FEELING WILL BLOW YOU AWAY. <h3>
+
+            </div>
+
+
+            <!-- Review part/Form -->
+            <form id="form" onsubmit="validate()">
+
+                <p id="ptwo"> | R E V I E W | </p>
+
+                <input id="name" type="text" placeholder="Name">
+
+                <input type="email" placeholder="e-mail" id="email"/>
+
+                <textarea id="textarea" placeholder="Comment"></textarea>
+
+                <!-- Rating click part -->
+                <p id="Ratingbox"> RATE </p>
+
+                    <div id="inrate">
+                    <div class="rat" id="rate_1" onclick="f(1)"></div>
+                    <div class="rat" id="rate_2" onclick="f(2)"></div> 
+                    <div class="rat"id="rate_3" onclick="f(3)"></div>
+                    <div class="rat"id="rate_4" onclick="f(4)"></div>
+                    <div class="rat" id="rate_5" onclick="f(5)"></div>
+
+                 </div>
+
+                </br>
+                </br>
+
+                <input id="subin" type="submit" value="Submit!"/>
+
+            </form>
+
+            </div>
+
+
+            <!-- footer part -->
+            <div id="topNav">
+                <a href="#top">GO TO TOP | </a>
+                <a href="GauthamCV.html" target="_blank">&nbsp;EDITOR |</a>
+                <a href="../Student04-prem/PremSiteMap.html" target="_blank">&nbsp;SITE MAP</a>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

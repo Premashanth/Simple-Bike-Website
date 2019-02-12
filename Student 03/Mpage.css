@@ -1,0 +1,121 @@
+
+.fixed-header{
+    position: fixed;
+    background: black;
+    padding: 10px;
+    color: white;
+    display: flex;
+    width: 100%;
+    z-index: 20;
+}
+
+div#logo>img {
+    width: 136px;
+    height: 125px;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+div#logo {
+    flex: 1;
+    display: flex;
+}
+
+div#main-nav {
+    flex: 1;
+    display: flex;
+}
+
+div#main-nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: auto;
+    flex: 1;
+}
+
+div#main-nav ul#navbar li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    line-height: 4px;
+    font-size: 15px;
+}
+
+body {
+    background-color: #eeeeee;
+    background-image: url("harley.jpg");
+}
+
+  {
+
+    font-color :white;
+
+}
+
+#container{
+    top:200px;
+    float:left ;
+    text-align: center;
+    position: relative;
+    left: 18%;
+
+}
+
+div.gallery {
+    margin: 5px;
+    border-style: inset;
+    border: 5px solid rgba(15, 40, 118, 0.87);
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid rgba(119, 119, 119, 0.01);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.dex {
+    padding: 15px;
+    text-align: center;
+}
+
+#container {
+    background-color: silver;
+    height: auto;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#topNav
+{
+
+    margin-left: 44%;
+
+}
+
+#topNav a
+{
+    margin-top: 800px;
+    color: #fffa0f;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    right: 250px;
+    bottom: 40px;
+}
+#topNav a:active
+{
+    color: red;
+}
+#topNav a:hover
+{
+    color:  #123078;
+}

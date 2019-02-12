@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="../Navigation.css">
+    <script src="../Navigation.js"></script>
+<title>CV</title>
+<style>
+    .myCV {
+    display: grid;
+    grid-template-columns: [leftside]200px[middle-start] 400px [middle-end]100px[end];
+    position: relative;
+    left: 20%;
+    border-width:5px;  
+    border-style:solid;
+    width: 850px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.topics {
+    grid-column: leftside/end;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.details {
+    text-align: justify;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.desList {
+    grid-column: leftside/end;
+    display: grid;
+    grid-template-columns: 200px 500px;
+    grid-row-gap: 30px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.description1
+    {
+        grid-column: leftside/end;
+        padding-left: 20px;
+        text-align: justify;
+    }
+.tags {
+    font-weight: bold;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.results
+    {
+        text-align: center;
+    }
+.subjects
+    {
+        text-align: left;
+    }
+.titles_Of_Forms
+    {
+        font-weight: 600;
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+   
+#profilePic
+    {
+        border-radius: 50%;
+        position: relative;
+        right: 35%;
+        z-index: -2;
+       
+    }
+    
+   #topNav 
+{
+    margin-top: 10px;
+    margin-left: 44%;
+}   
+
+   #topNav a 
+{
+    color: darkcyan;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+}
+#topNav a:active 
+{
+    color: red;
+}
+#topNav a:hover 
+{
+    color:  #123078
+}
+    </style>
+</head>
+
+<body>
+    
+        <div class="container" id="sss">
+      <div id="thelogo">
+            <!--the yellow area-->
+            
+            
+          <nav id="navigation">
+              <ul class="c">
+	         <li class="d"><a href="../Student 02/home.html"><img src="../MovieStash.png" id="mylogo" alt="MovieStash"/></a></li>
+             <li class="b"><a href="../Student 04/NowScreening.html">Now Screening</a></li>
+	        <li class="b"><a href="../Student 01/Store/Store.html">Buy Now</a></li>
+	         <li class="b"><a href="../Student 03/start.html">Quiz</a></li>
+             <li class="b"><a href="../Student 03/AboutUs.html">About Us</a></li>
+              
+           </ul>
+         </nav>
+            <nav id="nav" style="z-index: 2">
+              <ul class="c">
+             <li class="e"><a href="../Student 02/home.html">Home</a></li>
+             <li class="e"><a href="../Student 04/NowScreening.html">Now Screening</a></li>
+	        <li class="e"><a href="../Student 01/Store/Store.html">Buy Now</a></li>
+	         <li class="e"><a href="../Student 03/start.html">Quiz</a></li>
+             <li class="e"><a href="../Student 03/AboutUs.html">About Us</a></li>
+            
+           </ul>
+         </nav>
+         </div>
+<div class="myCV">
+  <div id="box1" class="topics">
+    Personal Details
+  </div>
+  <div>
+    <p class="titles_Of_Forms">Name :</p>
+    <p class="titles_Of_Forms">DOB :</p>
+    <p class="titles_Of_Forms">Gender :</p>
+    <p class="titles_Of_Forms">Address :</p>
+    <p class="titles_Of_Forms">Martial Status :</p>
+    <p class="titles_Of_Forms">Contact No:</p>
+    <p class="titles_Of_Forms">Email :</p>
+  </div>
+  <div style="font-family: 'Helvetica Neue', sans-serif">
+    <p>Dissnayaka Pathiranage Sahan Dilshan</p>
+    <p>13th of January 1998</p>
+    <p>Male</p>
+    <p>149/69, Kaluwala Road, Ganemulla</p>
+    <p>Single</p>
+    <p>077-1234567</p>
+    <p>sahan.2017050@iit.ac.lk</p>
+  </div>
+  <div><img alt="Profile Picture" id="profilePic" src="IMG_20180318_174728.jpg" width="250px" height="250px"></div>
+  <!-------------------------end of first row------------------------>
+  <hr width="810px" align="left">
+  
+    <div  class="topics">About me</div>
+  <div class="description1">
+      I'm a undergraduate student whose looking forward to become a sofware engineer. I'm a good programmer who is keen and loves languages such as Java and C++. Has a mathematical brain and I'm always thinking the out of box.
+    </div>
+    <hr width="810px" align="left">
+  <!-- -----------Start of education row------------------>
+  
+  <div class="topics">Education</div>
+  <div class="desList"> 
+    <!--		<div id="box6">-->
+    
+    <div class="tags">
+      <li type="disc">2013</li>
+    </div>
+    <div class="details">OL Results
+      <table style="position: relative; right: -30px;">
+		 <tr> <th>Subject</th>
+			 <th>Result</th>
+			 </tr>
+		  <tr><td class="subjects"><li>Mathematics </li></td><td class="results">A</td></tr>
+          <tr><td class="subjects"><li>Science </li></td><td class="results">A</td></tr>
+          <tr><td class="subjects"><li>IT</li></td><td class="results">A</td></tr>
+        <tr><td class="subjects"><li>Commerce</li></td><td class="results">A</td></tr>
+        <tr><td class="subjects"><li>Buddhism</li></td><td class="results">A</td></tr>
+        <tr><td class="subjects"><li>Sinhala</li></td><td class="results">B</td></tr>
+        <tr><td class="subjects"><li>English</li></td><td class="results">B</td></tr>
+        <tr><td class="subjects"><li>Music</li></td><td class="results">B</td></tr>
+        <tr><td class="subjects"><li>History</li></td><td class="results">C</td></tr>
+      </table>
+    </div>
+    <div class="tags">
+      <li type="disc">2016</li>
+    </div>
+    <div class="details" >AL Results (Maths Stream)
+      <table style="position: relative; right: -30px;">
+		 <tr> <th>Subject</th>
+			 <th>Result</th>
+			 </tr>
+		  <tr><td class="subjects"><li>Combined Maths </li></td><td class="results">C</td></tr>
+          <tr><td class="subjects"><li>Physics </li></td><td class="results">C</td></tr>
+          <tr><td class="subjects"><li>Chemistry</li></td><td class="results">C</td></tr>
+       
+      </table>
+    </div>
+    
+  </div>
+  <!-- ----------------------------End of Education Row------------------------------------>
+  <hr width="810px" align="left">
+  
+  <!------------------------------- Start of Otherskills row--------------------------------------->
+  <div class="topics">Skills</div>
+    <div class="description1"> 
+  <div style="padding-left: 30px;">
+      <div><li>Java, C# programming</li></div>
+      <div><li>Web Design</li></div>
+      <div><li>Microsoft Office</li></div>
+      <div><li>Photoshop</li></div>
+
+  </div>
+    </div>
+  <hr width="810px" align="left">
+  <!---------------------------------- End of Otherskills row-------------------------------------------> 
+        </div>
+  <div id="topNav" style="padding-left: 10px"><a href="#top">go to top | </a>
+            <a href="../Student 04/SiteMap.html" target="_blank">&nbsp;SiteMap</a>
+        </div>
+        
+        
+</div>
+    
+</body>
+</html>

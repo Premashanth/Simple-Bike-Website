@@ -1,0 +1,161 @@
+body {
+    background-color: #eeeeee;
+    background-image: url("skull.jpg");
+}
+
+#element.style {
+    background-color: red;
+}
+
+.fixed-header{
+    position: fixed;
+    background: black;
+    padding: 10px;
+    color: white;
+    display: flex;
+    width: 100%;
+    z-index: 20;
+}
+
+div#logo>img {
+    width: 136px;
+    height: 125px;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+
+p#quest {
+    color: wheat;
+}
+
+div#logo {
+    flex: 1;
+    display: flex;
+}
+
+div#main-nav {
+    flex: 1;
+    display: flex;
+}
+
+div#main-nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: auto;
+    flex: 1;
+}
+
+div#main-nav ul#navbar li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    line-height: 4px;
+    font-size: 15px;
+}
+
+
+.containerQ {
+    left: 300px;
+    top: 20px;
+    width: 600px;
+    height: 500px;
+    margin: 40px;
+    background-color: rgba(30, 37, 42, 0.52);
+    padding: 16px 50px 50px 50px;
+    border-radius: 40px;
+    border: 10px;
+    border-style: double;
+    opacity: 25.0;
+
+}
+
+.container h1 {
+    top: 100px;
+    font-family: sans-serif;
+    background-color: rgba(110, 6, 0, 0.9);
+    font-size: 60px;
+    text-align: center;
+    color : #ffae00;
+    border: 1px solid #1d3c6a;
+    padding: 2px 0px;
+    border-radius: 50px;
+}
+
+.container #quest {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #fdf8ff;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+#button0, #button1, #button2, #button3 {
+    background-color: rgba(215, 163, 0, 0.73);
+    width: 250px;
+    font-size: 20px;
+    color: #080408;
+    border: 50px #fffa0f;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px ;
+}
+
+#current_ques {
+    color: #000000;
+    font-size: 16px;
+}
+
+#button0:hover, #button1:hover, #button2:hover, #button3:hover {
+    cursor: pointer;
+    background-color: #6a275e;
+}
+
+#button0:focus, #button1:focus, #button2:focus, #button3:focus {
+    outline: 0; }
+
+#other {
+    width: 250px;
+    height: 10px;
+    margin: -45px 33px 10px 345px;
+    padding: 0px 10px;
+    border: 0px  ;
+}
+
+#button4, #button5 {
+    background-color: #ffae00;
+    width: 100px;
+    font-size: 20px;
+    color: #6e0600;
+    border: 1px #fffa0f;
+    border-radius: 50px;
+    margin: 10px 0px 10px 0px;
+    padding: 0px 0px ;
+}
+
+#countdown {
+    font-size: 20px;
+    color: #fdf8ff;
+    margin: 00px 10px 10px 280px;
+}
+
+#button4:hover, #button5:hover {
+    cursor: pointer;
+    background-color: #6a275e;
+}
+
+#button4:focus, #button5:focus {
+    outline: 0px;
+}
+
+#background{
+
+}
+
+#current_ques{
+    color:white;
+    position: fixed;
+}

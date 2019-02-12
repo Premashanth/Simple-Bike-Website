@@ -1,0 +1,179 @@
+
+      .container
+    {
+        width: 90%;
+        margin-left: 5%;
+         border: 2px solid black;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right:10px;
+        background-color: #FFFFFF;
+        opacity: 0.75;
+    }
+	
+	.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+
+	.logo
+        {
+            position: relative;
+            height: 100px;
+            width: 100%;
+            top: 10px;
+        }
+		
+		#thelogo{
+            background-image:url(image.jpg);
+            background-size: 100% 100% ;
+            position: relative;
+            height: 600px;
+            width:100%;
+        }  
+		
+		
+		 .c{
+    margin: 0px;
+    padding:0px;
+    list-style:none;
+}
+
+.c .b,.d{
+	float:left;
+	width:20%;
+	min-width:20%;
+	height:40px;
+	background-color:black;
+	line-height: 40px;
+	text-align: center;
+	font-size:20px;
+}
+
+
+
+.c .b a{
+	text-decoration:none;
+	color: white;
+	display:block;
+}
+
+.c .d a{
+	text-decoration:none;
+	color: white;
+	display:block;
+}
+
+
+
+.c .b a:hover{
+	background-color:gray;
+	
+}
+
+
+       #navigation{
+        position: absolute;
+        width: 100%;
+        top: 25px;
+        left: 0px;
+		font-family: cursive;
+/*     left: %;*/
+}
+	 #navigation1{
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: -10px;
+		font-family: cursive;
+/*     left: %;*/
+      
+     
+      }
+
+ 
+
+ #mylogo{
+            position: relative;
+            height:150px;
+            width: 150px;
+            top:-50px;
+            left:5px;
+            animation: logo 15s linear infinite;
+        }
+		@keyframes logo
+        {
+            0%   {transform: rotateY(0deg);}
+            100% {transform:rotateY(360deg); }    
+        }
+
+		
+		
+		/*SiteMap and Editor*/
+
+#topNav 
+{
+    margin-left: 44%;
+    
+}   
+
+   #topNav a 
+{
+    color: gray;
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+}
+#topNav a:active 
+{
+    color: blue;
+}
+#topNav a:hover 
+{
+    color:  green;
+}
+
+
+
+
+
+
+
+
+ 
+      
+     
+}
+
+
+
+
+
+
+    
+
+
+
+    

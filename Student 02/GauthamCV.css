@@ -1,0 +1,101 @@
+
+        .myCV {
+        display: grid;
+        grid-template-columns: [leftside]200px[middle-start] 400px [middle-end]100px[end];
+        position: relative;
+        left: 20%;
+        border-width:5px;  
+        border-style:solid;
+        width: 850px;
+        padding-left: 20px;
+        margin-top: 10px;
+        color:white;
+
+    }
+
+    .topics {
+        grid-column: leftside/end;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+
+    .details {
+        text-align: justify;
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .desList {
+        grid-column: leftside/end;
+        display: grid;
+        grid-template-columns: 200px 500px;
+        grid-row-gap: 30px;
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .description1
+        {
+            grid-column: leftside/end;
+            padding-left: 20px;
+            text-align: justify;
+        }
+
+    .tags {
+        font-weight: bold;
+        font-family: 'Helvetica Neue', sans-serif;
+        color:white;
+    }
+
+    .results
+        {
+            text-align: center;
+        }
+
+    .subjects
+        {
+            text-align: left;
+        }
+
+    .titles_Of_Forms
+        {
+            font-weight: 600;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+    #profilePic
+        {
+            border-radius: 10%;
+            margin-left:-50%;
+        }
+
+    #topNav 
+    {
+        margin-top: 10px;
+        margin-left: 44%;
+    }   
+
+    #topNav a 
+    {
+        color: darkcyan;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        display: inline-block;
+        position: relative;
+        bottom: 10px;
+    }
+
+
+
+    #topNav a:hover 
+    {
+        color:  #123078
+    }
+
+    #bd{
+    background-image:url(cvbg.jpg);
+    }
+
+    #discrip{
+        width:600px;
+    }

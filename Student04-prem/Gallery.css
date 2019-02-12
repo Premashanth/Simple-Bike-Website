@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+.selectColor {
+height: 30px;
+width: 30px;
+}
+.btn {
+font-size: 12px;
+}
+.grid {
+display: grid;
+grid-template-columns: [first]1fr [second]1fr [third]1fr [fourth]1fr [fifth] 1fr ; /*-Setting up 5 equal columns*/
+grid-template-rows: [first]1fr [second]2fr [third]1fr ; /*-Setting up rows*/
+grid-column-gap: 30px;
+grid-row-gap: 20px;
+padding-left: 30px;
+padding-top: 30px;
+}
+#selector1 {  
+grid-column: fifth;
+font-family:cursive;
+text-align: center;
+position: relative;
+padding-left: 50%;
+}
+#selector2 {
+grid-column: fifth;
+font-family:cursive;
+text-align: center;
+position: relative;
+padding-left: 50%;
+}
+.mov {
+position: relative;
+margin: 0 auto; /*-It adds the same amount of space on both sides, so it will be centered horizontally.*/
+}
+.mov :hover
+{
+-ms-transform: scale(1.2); 
+-webkit-transform: scale(1.1);
+transform: scale(1.1); 
+}
+.bikeCache {
+width: 206px;
+height: 200px;
+}
+#image {
+grid-column: second/fifth;
+position: static;
+
+}
+#details {
+
+display: grid;       /*  Set the display property to grid to make a block-level grid container*/
+grid-column: 2/6;
+position: relative;
+left: -50px;
+width: 85%;
+}
+.description {
+grid-column: 1/4;
+grid-row-gap: 20px;
+text-align: justify;
+font-family: Georgia, serif;
+}
+.bikeName
+{
+font-size: 26px;
+text-align: center;
+font-weight: bold;
+font-family: "American Typewriter", serif;
+}
